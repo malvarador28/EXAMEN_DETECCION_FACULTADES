@@ -369,7 +369,7 @@ public class MainActivity extends AppCompatActivity implements OnSuccessListener
             for (int i = 0; i < probability.size(); i++)
                 if(probability.get(i).getScore()>0.5)
 
-                {res = res + "Facultad: " + probability.get(i).getLabel() +  "\n" +  probability.get(i).getScore()*100 + " % \n";}
+                {res = res + probability.get(i).getLabel() +  "\n" +  probability.get(i).getScore()*100 + " % \n";}
             txtResults.setText(res);
             model.close();
         } catch (IOException e) {
